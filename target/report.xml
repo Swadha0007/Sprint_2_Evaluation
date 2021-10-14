@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="25.746351">
+    <testcase classname="Sign up feature" name="Automate the learning path icon" time="25.746351">
+        <failure message="java.lang.AssertionError&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:87)&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:96)&#13;&#10;&#9;at StepDefinition.AutomationDefinition.user_is_able_to_see_the_learning_path_to_the_course(AutomationDefinition.java:483)&#13;&#10;&#9;at ✽.User is able to see the learning path to the course(file:src/test/java/Featurefile/signup.feature:57)&#13;&#10;"><![CDATA[Given User is on the elearning application page.............................passed
+When User enters the login credentials like username and password...........passed
+Then User clicks on the login button........................................passed
+And User is navigated to the user portal....................................passed
+Then User is able to see all the courses in user portal.....................passed
+Given User clicks on the course name for accesing...........................passed
+Then User is navigated to the course description dashboard where all icons are present.passed
+Then User clicks on learning path icon......................................passed
+And User is able to navigate to the learning path description page..........passed
+Then User is able to see the learning path to the course....................failed
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.fail(Assert.java:96)
+	at StepDefinition.AutomationDefinition.user_is_able_to_see_the_learning_path_to_the_course(AutomationDefinition.java:483)
+	at ✽.User is able to see the learning path to the course(file:src/test/java/Featurefile/signup.feature:57)
+]]></failure>
+    </testcase>
+</testsuite>

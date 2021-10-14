@@ -1,0 +1,181 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Automate the login with the help of credentials",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7397200,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on the elearning application page",
+            "match": {
+              "location": "AutomationDefinition.user_is_on_the_elearning_application_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 124878400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enters the login credentials like username and password",
+            "match": {
+              "location": "AutomationDefinition.user_enters_the_login_credentials_like_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4180646000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User clicks on the login button",
+            "match": {
+              "location": "AutomationDefinition.user_clicks_on_the_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3016077500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User is navigated to the user portal",
+            "match": {
+              "location": "AutomationDefinition.user_is_navigated_to_the_user_portal()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 63600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User is able to see all the courses in user portal",
+            "match": {
+              "location": "AutomationDefinition.user_is_able_to_see_all_the_courses_in_user_portal()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-13T10:42:02.152Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6884005700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hookclass.initialization()"
+            }
+          }
+        ],
+        "line": 52,
+        "name": "Automate the learning path icon",
+        "description": "",
+        "id": "sign-up-feature;automate-the-learning-path-icon",
+        "after": [
+          {
+            "result": {
+              "duration": 240263600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hookclass.closedriver()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2617101100,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "User clicks on the course name for accesing",
+            "match": {
+              "location": "AutomationDefinition.user_clicks_on_the_course_name_for_accesing()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 53459700,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "User is navigated to the course description dashboard where all icons are present",
+            "match": {
+              "location": "AutomationDefinition.user_is_navigated_to_the_course_description_dashboard_where_all_icons_are_present()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2569463800,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "User clicks on learning path icon",
+            "match": {
+              "location": "AutomationDefinition.user_clicks_on_learning_path_icon()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3012054300,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "User is able to navigate to the learning path description page",
+            "match": {
+              "location": "AutomationDefinition.user_is_able_to_navigate_to_the_learning_path_description_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.fail(Assert.java:96)\r\n\tat StepDefinition.AutomationDefinition.user_is_able_to_see_the_learning_path_to_the_course(AutomationDefinition.java:483)\r\n\tat ✽.User is able to see the learning path to the course(file:src/test/java/Featurefile/signup.feature:57)\r\n",
+              "duration": 3037205700,
+              "status": "failed"
+            },
+            "line": 57,
+            "name": "User is able to see the learning path to the course",
+            "match": {
+              "location": "AutomationDefinition.user_is_able_to_see_the_learning_path_to_the_course()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@icon3"
+          }
+        ]
+      }
+    ],
+    "name": "Sign up feature",
+    "description": "",
+    "id": "sign-up-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/Featurefile/signup.feature",
+    "tags": []
+  }
+]
