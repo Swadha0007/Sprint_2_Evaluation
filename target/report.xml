@@ -1,8 +1,51 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="25.746351">
-    <testcase classname="Sign up feature" name="Automate the learning path icon" time="25.746351">
-        <failure message="java.lang.AssertionError&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:87)&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:96)&#13;&#10;&#9;at StepDefinition.AutomationDefinition.user_is_able_to_see_the_learning_path_to_the_course(AutomationDefinition.java:483)&#13;&#10;&#9;at ✽.User is able to see the learning path to the course(file:src/test/java/Featurefile/signup.feature:57)&#13;&#10;"><![CDATA[Given User is on the elearning application page.............................passed
-When User enters the login credentials like username and password...........passed
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="13" time="697.092014">
+    <testcase classname="Sign up feature" name="Automate the course subscription" time="54.447606">
+        <system-out><![CDATA[Given User is on the elearning application page.............................passed
+When User enters the login credentials like "jai19" and "Swadha@9707".......passed
+Then User clicks on the login button........................................passed
+And User is navigated to the user portal....................................passed
+Then User is able to see all the courses in user portal.....................passed
+Given User is on the elearning page.........................................passed
+When User enters the login credentials which are "Swadha797" and "Swadha@9707".passed
+And User clicks on login button.............................................passed
+And User clicks on homepage.................................................passed
+Then user is navigated to the homepage......................................passed
+And User clicks on course to be subscribed..................................passed
+Then the user is navigated to the course description page with welcome message.passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Sign up feature" name="Automate the Course description icon" time="42.722459">
+        <system-out><![CDATA[Given User is on the elearning application page.............................passed
+When User enters the login credentials like "jai19" and "Swadha@9707".......passed
+Then User clicks on the login button........................................passed
+And User is navigated to the user portal....................................passed
+Then User is able to see all the courses in user portal.....................passed
+Given User clicks course description icon...................................passed
+Then User is Able navigate to course description page.......................passed
+And user clicks on the description icon.....................................passed
+Then User is navigated to the description page..............................passed
+And User is able to access the course details...............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Sign up feature" name="Automate the Course agenda icon" time="54.380421">
+        <system-out><![CDATA[Given User is on the elearning application page.............................passed
+When User enters the login credentials like "jai19" and "Swadha@9707".......passed
+Then User clicks on the login button........................................passed
+And User is navigated to the user portal....................................passed
+Then User is able to see all the courses in user portal.....................passed
+Given User clicks on the course name........................................passed
+Then User is navigated to the course description dashboard..................passed
+Then User clicks on agenda icon.............................................passed
+And User is able to navigate to the agenda description page.................passed
+Then User is able to see the agenda to the course...........................passed
+And User is able to click on the course name in order to return to dashboard.passed
+Then User is able to return to the dashboard after agenda...................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Sign up feature" name="Automate the learning path icon" time="43.113241">
+        <system-out><![CDATA[Given User is on the elearning application page.............................passed
+When User enters the login credentials like "jai19" and "Swadha@9707".......passed
 Then User clicks on the login button........................................passed
 And User is navigated to the user portal....................................passed
 Then User is able to see all the courses in user portal.....................passed
@@ -10,14 +53,153 @@ Given User clicks on the course name for accesing...........................pass
 Then User is navigated to the course description dashboard where all icons are present.passed
 Then User clicks on learning path icon......................................passed
 And User is able to navigate to the learning path description page..........passed
-Then User is able to see the learning path to the course....................failed
-
-StackTrace:
-java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:87)
-	at org.junit.Assert.fail(Assert.java:96)
-	at StepDefinition.AutomationDefinition.user_is_able_to_see_the_learning_path_to_the_course(AutomationDefinition.java:483)
-	at ✽.User is able to see the learning path to the course(file:src/test/java/Featurefile/signup.feature:57)
-]]></failure>
+Then User is able to see the learning path to the course....................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Sign up feature" name="Automate the links icon" time="43.162084">
+        <system-out><![CDATA[Given User is on the elearning application page.............................passed
+When User enters the login credentials like "jai19" and "Swadha@9707".......passed
+Then User clicks on the login button........................................passed
+And User is navigated to the user portal....................................passed
+Then User is able to see all the courses in user portal.....................passed
+Given User clicks on the selenium for accesing..............................passed
+Then User is navigated to the course dashboard where all icons are present..passed
+Then User clicks on links icon..............................................passed
+And User is able to navigate to the links description page..................passed
+Then User is able to see the links to the course............................passed
+And User clicks on the link provided........................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Sign up feature" name="Automate the test icon" time="42.73997">
+        <system-out><![CDATA[Given User is on the elearning application page.............................passed
+When User enters the login credentials like "jai19" and "Swadha@9707".......passed
+Then User clicks on the login button........................................passed
+And User is navigated to the user portal....................................passed
+Then User is able to see all the courses in user portal.....................passed
+Given User clicks on the course name for accesing it........................passed
+Then User is navigated to the course description dashboard where icons are present.passed
+Then User clicks on test icon...............................................passed
+And User is able to navigate to the test description page...................passed
+Then User is able to see the tests to the course............................passed
+And User is able to click on the test link..................................passed
+Then User is able to navigate to the test page..............................passed
+And User is able to click on the proceed button in order to take test.......passed
+Then User is navigated to the test page.....................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Sign up feature" name="Automate the announcement icon" time="43.846564">
+        <system-out><![CDATA[Given User is on the elearning application page.............................passed
+When User enters the login credentials like "jai19" and "Swadha@9707".......passed
+Then User clicks on the login button........................................passed
+And User is navigated to the user portal....................................passed
+Then User is able to see all the courses in user portal.....................passed
+Given User clicks on the course name for accesing the announcement icon.....passed
+Then User is navigated to the course description dashboard for accessing announcement icon.passed
+Then User clicks on announcement icon.......................................passed
+And User is able to navigate to the announcement description page...........passed
+Then User is able to see the announcements made to the course...............passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Sign up feature" name="Automate the forums icon" time="41.832048">
+        <system-out><![CDATA[Given User is on the elearning application page.............................passed
+When User enters the login credentials like "jai19" and "Swadha@9707".......passed
+Then User clicks on the login button........................................passed
+And User is navigated to the user portal....................................passed
+Then User is able to see all the courses in user portal.....................passed
+Given User clicks on the course name for accesing the forums icon...........passed
+Then User is navigated to the course description dashboard for accessing forums icon.passed
+Then User clicks on forum icon..............................................passed
+And User is able to navigate to the forum description page..................passed
+Then User is able to see the forums in the course...........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Sign up feature" name="Automate the groups icon" time="48.902619">
+        <system-out><![CDATA[Given User is on the elearning application page.............................passed
+When User enters the login credentials like "jai19" and "Swadha@9707".......passed
+Then User clicks on the login button........................................passed
+And User is navigated to the user portal....................................passed
+Then User is able to see all the courses in user portal.....................passed
+Given User clicks on the course name for accesing the groups icon...........passed
+Then User is navigated to the course description dashboard for accessing groups icon.passed
+Then User clicks on groups icon.............................................passed
+And User is able to navigate to the groups description page.................passed
+Then User is able to see the search field and gives the values such as "swadha" for groups for searching.passed
+And User is navigated to the respective groups page.........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Sign up feature" name="Automate the user icon" time="74.588111">
+        <system-out><![CDATA[Given User is on the elearning application page.............................passed
+When User enters the login credentials like "jai19" and "Swadha@9707".......passed
+Then User clicks on the login button........................................passed
+And User is navigated to the user portal....................................passed
+Then User is able to see all the courses in user portal.....................passed
+Given User clicks on the course name for accesing the user icon.............passed
+Then User is navigated to the course description dashboard for accessing user icon.passed
+Then User clicks on user icon...............................................passed
+And User is able to navigate to the user description page...................passed
+Then User is able to see the user in the course enrolled....................passed
+And User clicks on the name to see it arranged in ascending order...........passed
+Then User clicks on name again to see it arranged in descending order.......passed
+And User clicks on the first name to see it arranged in ascending order.....passed
+Then User clicks on first name again to see it arranged in descending order.passed
+And User clicks on the last name to see it arranged in ascending order......passed
+Then User clicks on last name again to see it arranged in descending order..passed
+And User clicks on the login to see it arranged in ascending order..........passed
+Then User clicks on login again to see it arranged in descending order......passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Sign up feature" name="Automate the documents icon" time="79.432252">
+        <system-out><![CDATA[Given User is on the elearning application page.............................passed
+When User enters the login credentials like "jai19" and "Swadha@9707".......passed
+Then User clicks on the login button........................................passed
+And User is navigated to the user portal....................................passed
+Then User is able to see all the courses in user portal.....................passed
+Given User clicks on the course name for accesing the documents icon........passed
+Then User is navigated to the course description dashboard for accessing documents icon.passed
+And User clicks on documents icon...........................................passed
+Then User is able to navigate to the documents description page.............passed
+And User is able to see the search field and button and enters the name in field.passed
+Then User clicks on the search button and is able to see the documents related to it.passed
+And User clicks on current folder and selects the documents.................passed
+Then user can see the documents arranged in ascendiang order according to the type,name,size,date.passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Sign up feature" name="Automate the dropbox icon for sharing a new file" time="53.547318">
+        <system-out><![CDATA[Given User is on the elearning application page.............................passed
+When User enters the login credentials like "jai19" and "Swadha@9707".......passed
+Then User clicks on the login button........................................passed
+And User is navigated to the user portal....................................passed
+Then User is able to see all the courses in user portal.....................passed
+Given User clicks on the course name for accesing the dropbox icon..........passed
+Then User is navigated to the course description dashboard for accessing dropbox icon.passed
+And User clicks on dropbox icon.............................................passed
+Then User is able to navigate to the dropbox description page...............passed
+And user clicks on the share a new file button..............................passed
+Then User is navigated to a page for sharing file...........................passed
+And user clicks on the dropdown for selecting the person to send file.......passed
+Then User clicks on the area for uploading file.............................passed
+And Switch to the other window for selection................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Sign up feature" name="Automate the dropbox icon for adding a new folder" time="74.377321">
+        <system-out><![CDATA[Given User is on the elearning application page.............................passed
+When User enters the login credentials like "jai19" and "Swadha@9707".......passed
+Then User clicks on the login button........................................passed
+And User is navigated to the user portal....................................passed
+Then User is able to see all the courses in user portal.....................passed
+Given User clicks on the course name for accesing dropbox icon..............passed
+Then User is navigated to the description dashboard for accessing dropbox icon.passed
+And User clicks on dropbox icon in order to navigate to the page............passed
+Then User is able to navigate to dropbox description page...................passed
+And User clicks on the add a new folder button..............................passed
+Then User is navigated to a page for creating a new folder..................passed
+And User gives the "space technology" for creating a new folder.............passed
+Then User clicks on create folder...........................................passed
+And User is able to see the message on creating a folder....................passed
+Then User is able to arrange the folders according to type,sent files.......passed
+And User clicks on selectall and unselectall button.........................passed
+And User selects the folder to be deleted and clicks on the details and then on delete.passed
+Then the deletion of folder is verified.....................................passed
+]]></system-out>
     </testcase>
 </testsuite>

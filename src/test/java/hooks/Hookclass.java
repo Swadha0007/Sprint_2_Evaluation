@@ -10,7 +10,8 @@ public class Hookclass {
 	
 
 	public static WebDriver driver;
-	/* public static WebDriver driver1; */
+	public static WebDriver driver1;
+
 	
 	@Before
 	public void initialization()
@@ -19,13 +20,11 @@ public class Hookclass {
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Swadha Pankhudi\\eclipse-workspace\\Automation\\chromedriver.exe");
 	    driver = new ChromeDriver();
 		driver.get("http://elearningm1.upskills.in/index.php");
-		// this will only be specified when you are using driver1 in automation definition file
-		/*
-		 * System.setProperty("webdriver.chrome.driver",
-		 * "C:\\Users\\Swadha Pankhudi\\eclipse-workspace\\Automation\\chromedriver.exe"
-		 * ); driver1 = new ChromeDriver();
-		 * driver1.get("http://elearningm1.upskills.in/index.php");
-		 */
+		
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Swadha Pankhudi\\eclipse-workspace\\Automation\\chromedriver.exe");
+	    driver1 = new ChromeDriver();
+		driver1.get("http://elearningm1.upskills.in/index.php");
+		 
 	}
 
 	@After
@@ -34,7 +33,8 @@ public class Hookclass {
 		System.out.println("The browser is closing now");
 		
 		driver.quit();
-		/* driver1.quit(); */
+		driver1.quit();
+		
 	}
 }
 

@@ -11,7 +11,7 @@ import cucumber.api.junit.Cucumber;
 		,glue= {"StepDefinition","hooks"},
 				dryRun = false,
 				monochrome = true,
-				tags= {"@icon3"},// you can specify the tags according to your choice of execution here
+				tags= {},// you can specify the tags according to your choice of execution here
 				plugin = { "pretty" , "junit:target/report.xml" , "html:target/cucumber-pretty" , "json:target/jsonreport.json"}
 	
 		)
