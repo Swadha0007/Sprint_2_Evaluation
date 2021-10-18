@@ -30,7 +30,7 @@ public class AutomationDefinition {
 			System.out.println("You are able  to navigate to the user portal");
 
 		} catch (Exception e) {
-			System.out.println("Not able to navigate to the e learning application" + e);
+			System.out.println("Not able to navigate to the user portal" + e);
 			Assert.fail();
 		}
 
@@ -213,8 +213,9 @@ public class AutomationDefinition {
 	}
 
 	@Then("user clicks on the description icon")
-	public void user_clicks_on_the_description_icon() { // Write code here that turns the phrase above into concrete
-														// actions
+	public void user_clicks_on_the_description_icon() { 
+		// Write code here that turns the phrase above into concrete
+														
 		try {
 			driver.findElement(By.id("istooldesc_24894")).click();
 			System.out.println(" able to click on the icon");
